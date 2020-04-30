@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
+
 .container {
-    margin: 0 150px;
+    width: 70%;
 }
 
-.content, .menu-list, footer {
-    max-width: 980px;
+.center {
+    margin: 0 auto;
+}
+
+header img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 /* ========================================= */
@@ -23,6 +30,54 @@ a {
     text-decoration: none;
 }
 
+.menu {
+    position: relative;
+}
+
+.items {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+}
+
+
+
+.items-blank {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    color: black;
+    padding: 14.5px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown-menu:hover .items {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.dropdown-menu:hover .link-menu {
+    background-color: yellow;
+    
+}
+
+.dropdown-menu-blank:hover .items-blank {
+    display: inline;
+}
+
+.dropdown-menu-blank:hover .link-menu-blank {
+    background-color: yellow;
+    
+}
 
 .menu-list {
     display: flex;
@@ -36,16 +91,14 @@ a {
     display: flex;
     background-color: gray;
     color: black;
-    width: 980px;
+
 }
 
-.item-1 {
-    margin-left: 50px;
-    margin-right: 20px;
-} 
 
-.link-menu-1, .link-menu-2 {
+
+.link-menu, .link-menu-blank {
     margin-right: 20px;
+    padding: 10px;
 }
 
 /* ======================================== */
@@ -89,12 +142,13 @@ footer {
     background-color: red;
     color: black;
     border: solid 1px black;
-    height: 150px;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 .info p {
     text-align: left;
+    width: 60%;
 }
 
 .author p {
