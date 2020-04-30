@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 70%;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+header img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ========================================= */
+/* ============= MENU BAR ================== */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    position: relative;
+}
+
+.items {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+}
+
+
+
+.items-blank {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    color: black;
+    padding: 14.5px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown-menu:hover .items {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.dropdown-menu:hover .link-menu {
+    background-color: yellow;
+    
+}
+
+.dropdown-menu-blank:hover .items-blank {
+    display: inline;
+}
+
+.dropdown-menu-blank:hover .link-menu-blank {
+    background-color: yellow;
+    
+}
+
+.menu-list {
+    display: flex;
+    background-color: greenyellow;
+    margin: 20px 0 40px 0;
+    padding: 10px;
+}
+
+.menu1-bar, .menu2-bar {
+    visibility: hidden;;
+    display: flex;
+    background-color: gray;
+    color: black;
+
+}
+
+
+
+.link-menu, .link-menu-blank {
+    margin-right: 20px;
+    padding: 10px;
+}
+
+/* ======================================== */
+/* ================CONTENT================= */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.left-bar, .right-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-item {
+    width: 167px;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    background-color:#c1f5f0;
+    border: solid 1px black;
+    border-radius: 8%;
+    margin-bottom: 5px;
+}
+
+.center-bar {
+    margin: 40px 20px;
+}
+
+h3 {
+    margin-bottom: 50px;
+}
+
+/* ========================================= */
+/* ===============FOOTER==================== */
+
+footer {
+    display: flex;
+    background-color: red;
+    color: black;
+    border: solid 1px black;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    text-align: left;
+    width: 60%;
+}
+
+.author p {
+    color: whitesmoke;
+    text-align: right;
+}
